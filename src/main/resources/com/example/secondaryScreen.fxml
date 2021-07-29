@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="screen2" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.SecondaryScreenController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="335.0" layoutY="187.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="68.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/JavaFX_Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="saveAndNextBtn" layoutX="125.0" layoutY="519.0" mnemonicParsing="false" onAction="#switchToTertiaryScreen" prefHeight="28.0" prefWidth="96.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="Save and next" textFill="WHITE" />
+      <TextField layoutX="31.0" layoutY="213.0" prefHeight="37.0" prefWidth="274.0" style="-fx-border-color: black;" />
+      <Label layoutX="31.0" layoutY="196.0" text="Name" />
+      <Label layoutX="32.0" layoutY="265.0" text="Email" />
+      <TextField layoutX="31.0" layoutY="282.0" prefHeight="37.0" prefWidth="274.0" style="-fx-border-color: black;" />
+      <Label layoutX="30.0" layoutY="331.0" text="Office" />
+      <ComboBox layoutX="32.0" layoutY="348.0" prefHeight="37.0" prefWidth="274.0" promptText="Java Developer" style="-fx-border-color: black;" />
+   </children>
+</Pane>
